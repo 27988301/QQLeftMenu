@@ -1,4 +1,4 @@
-﻿##QQLeftMenu
+##QQLeftMenu
   QQ旧版的侧滑栏,增加了复杂情况下的事件分发处理
 
   主要判断了如果在多级view,比如内嵌ViewPager情况下的事件分发处理,这只是一种边界触摸事件
