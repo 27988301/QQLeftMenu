@@ -53,14 +53,11 @@ public class MainRelativeLayout extends RelativeLayout {
         floatEvaluator = new FloatEvaluator();
     }
 
-    /**
-     * 设置触摸事件由viewHelper消费
-     */
+    //设置触摸事件由viewHelper消费
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
         try {
-            //抓取异常是因为这个地方可能出现空指针,这是viewDragHelper内部没有初始化的原因
             viewDragHelper.processTouchEvent(event);
         }catch (Exception e){
             e.printStackTrace();
@@ -70,9 +67,7 @@ public class MainRelativeLayout extends RelativeLayout {
 
     float downX = 0;
 
-    /**
-     * 设置是否拦截触摸事件,这个地方是事件分发的重点
-     */
+    //设置是否拦截触摸事件
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
 
@@ -81,7 +76,6 @@ public class MainRelativeLayout extends RelativeLayout {
             case MotionEvent.ACTION_DOWN:
                 downX = ev.getX();
                 float downY = ev.getY();
-                //如果滑动区域是边界
                 if(downX<dimen100 && downY>dimen100){
                     if(listener != null){
                         listener.onStartSlide();
@@ -91,7 +85,6 @@ public class MainRelativeLayout extends RelativeLayout {
                 break;
             case MotionEvent.ACTION_MOVE:
                 float moveX = ev.getX();
-                //如果此时menu栏是开启,并且手势是从右向左滑动
                 if(is_open_menu && moveX-downX < -10) {
                     flag = true;
                 }
@@ -107,6 +100,7 @@ public class MainRelativeLayout extends RelativeLayout {
                 }
                 break;
         }
+        System.out.print(flag);
         return flag;
     }
 

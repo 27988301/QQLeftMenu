@@ -39,13 +39,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#fff">
-    <Button
-        android:id="@+id/button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textSize="20sp"
-        android:text="点击事件"/>
+        android:text="主界面"/>
     </RelativeLayout>
 
 </LinearLayout>
