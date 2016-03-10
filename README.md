@@ -8,6 +8,8 @@
   如果这时界面的view发生改变,比如textview更改文字,广告viewpager自动轮播等等,ViewHelp所操控的滑动状态立刻消失,界面布局立刻回到原处,
 
   有时还有发生main界面缩小的百分之80,并处于屏幕中间(这是我在界面滑动中广告轮播图自动轮播出现的状况),
+  
+  ![image](https://github.com/Zhaoss/QQLeftMenu/blob/master/image/1.jpg?raw=true)
 
   我尝试很多方法解决,都没有办法,所以只要让广告轮播图在界面滑动时暂停轮播
 
@@ -17,5 +19,4 @@
 
   ps:代码只提供思路
 
-![image](https://github.com/Zhaoss/QQLeftMenu/blob/master/image/1.jpg?raw=true)
 ![image](https://github.com/Zhaoss/QQLeftMenu/blob/master/image/2.jpg?raw=true)
