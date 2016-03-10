@@ -16,3 +16,6 @@
   就会出现空指针异常,这是由于viewDragHelper内部初始化不成功导致的,并且因为viewDragHelper内部代码初始化方法是私有的,所以手动调用方法初始化不行,只能抓取一下异常
 
   ps:代码只提供思路
+
+![image](https://github.com/Zhaoss/QQLeftMenu/blob/master/image/1.jpg?raw=true)
+![image](https://github.com/Zhaoss/QQLeftMenu/blob/master/image/2.jpg?raw=true)
